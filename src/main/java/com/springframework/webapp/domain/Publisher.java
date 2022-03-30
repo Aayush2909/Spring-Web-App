@@ -3,7 +3,9 @@ package com.springframework.webapp.domain;
 import com.springframework.webapp.Utils.Address;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 public class Publisher {
@@ -16,6 +18,10 @@ public class Publisher {
 
     @OneToOne(cascade = CascadeType.ALL)
     private Address address = new Address();
+
+    @OneToMany
+    @JoinColumn(name = "publisher_id")
+    private Set<Book> books = new HashSet<>();
 
     public Publisher() {
     }
@@ -46,6 +52,14 @@ public class Publisher {
 
     public void setAddress(Address address) {
         this.address = address;
+    }
+
+    public Set<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(Set<Book> books) {
+        this.books = books;
     }
 
     @Override
