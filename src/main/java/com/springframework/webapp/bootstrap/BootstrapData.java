@@ -1,6 +1,6 @@
-package com.springframework.webapp.Bootstrap;
+package com.springframework.webapp.bootstrap;
 
-import com.springframework.webapp.Utils.Address;
+import com.springframework.webapp.utils.Address;
 import com.springframework.webapp.domain.Author;
 import com.springframework.webapp.domain.Book;
 import com.springframework.webapp.domain.Publisher;
@@ -9,10 +9,6 @@ import com.springframework.webapp.repositories.BookRepository;
 import com.springframework.webapp.repositories.PublisherRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 @Component
 public class BootstrapData implements CommandLineRunner {

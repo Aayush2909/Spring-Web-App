@@ -1,6 +1,6 @@
 package com.springframework.webapp.domain;
 
-import com.springframework.webapp.Utils.Address;
+import com.springframework.webapp.utils.Address;
 
 import javax.persistence.*;
 import java.util.HashSet;

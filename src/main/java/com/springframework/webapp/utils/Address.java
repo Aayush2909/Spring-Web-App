@@ -1,4 +1,4 @@
-package com.springframework.webapp.Utils;
+package com.springframework.webapp.utils;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
